@@ -1,6 +1,6 @@
 # 1. Синхронизация скроллинга 2-х виджетов
 
-```html
+```javascript
 var histoUid = ''; // guid второго виджета (для синхронизации)
 var bmrDetailDiv = $('#' + w.general.renderTo); // контейнер текущего виджета
 var residentDetailDiv = $('#' + histoUid); // контейнер второго виджета
@@ -16,5 +16,4 @@ document.getElementById('grid-' + w.general.renderTo).addEventListener("scroll",
         residentDetailDiv.scrollTop($(this).scrollTop() * scrollCf);
 
 });
-
 ```
