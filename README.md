@@ -6,7 +6,7 @@ var residentDetailDiv = $('#' + histoUid); // контейнер второго 
 var scrollCf = 0.65; // коэфициент скроллинга,
                     // на случай разной высоты виджетов, scrollCf = 1, если виджеты равны
 // добавление EventListener на событие скроллинга
-document.getElementById('grid-' + w.general.renderTo).addEventListener("scroll", function(){
+document.getElementById(w.general.renderTo).addEventListener("scroll", function(){
     // пр скроллинге текущего виджета:
         // прокрутить текщий
         bmrDetailDiv.scrollTop($(this).scrollTop());
